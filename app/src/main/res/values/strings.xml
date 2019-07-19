@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">eParchi</string>
+    <string name="base_url">https://5b16db4e.ngrok.io/</string>
+    <string-array name="induction">
+        <item>Select laddle No.</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="materialtype">
+        <item>Select Material Type .</item>
+        <item>Angle</item>
+        <item>Channel</item>
+    </string-array>
+
+    <string-array name="ccmreason">
+        <item>Material not ready</item>
+        <item>Tendish Problem</item>
+        <item>Section Change</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="inductionreason">
+        <item>Tendish Change (Sequence Change) </item>
+        <item>Raw making quality improper</item>
+        <item>Power cut problem(GLD)</item>
+        <item>Mould tube problem</item>
+        <item>Hydraulic problem</item>
+        <item>Cooling problem</item>
+        <item>Panel breakdown</item>
+        <item>Material Not ready(Full bhatti heating)</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="Mill12">
+        <item>A - 40*40*5</item>
+        <item>A - 40*40*6</item>
+        <item>A - 50*50*4</item>
+        <item>A - 50*50*5</item>
+        <item>A - 50*50*6</item>
+    </string-array>
+
+
+    <string-array name="sequneces">
+        <item>Select Sequence No.</item>
+    </string-array>
+
+    <string-array name="sizeofcc">
+        <item>Size in CC</item>
+        <item>100 x 100</item>
+        <item>125 x 125</item>
+    </string-array>
+    <string-array name="personlogins">
+        <item>Login as</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>No .</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="milllength">
+        <item> Mill Number </item>
+        <item>20</item>
+        <item>12</item>
+        <item>09</item>
+    </string-array>
+
+    <string-array name="milllength2">
+        <item>Length </item>
+        <item>22</item>
+        <item>20</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="furnace">
+        <item>Furnace No .</item>
+        <item>Furnace 1</item>
+        <item>Furnace 2</item>
+        <item>Furnace 3</item>
+        <item>Furnace 4</item>
+    </string-array>
+
+    <string-array name="cuttype">
+        <item>Cut Type </item>
+        <item>Manual</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string-array name="billet">
+        <item>All</item>
+        <item>Lollypop</item>
+        <item>Billet</item>
+    </string-array>
+    <string name="title_activity_samplenav">samplenav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

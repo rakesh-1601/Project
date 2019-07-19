@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/offtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/customtable"
+                android:padding="8dp"
+                android:text="Billet Length"
+                app:layout_constraintEnd_toStartOf="@+id/totaltime"
+                app:layout_constraintStart_toEndOf="@+id/ontime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/length"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable2"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="124"
+                app:layout_constraintEnd_toEndOf="@+id/offtime"
+                app:layout_constraintStart_toStartOf="@+id/offtime"
+                app:layout_constraintTop_toBottomOf="@+id/offtime" />
+
+            <TextView
+                android:id="@+id/ttime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable2"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="124"
+                app:layout_constraintEnd_toEndOf="@+id/ontime"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/ontime"
+                app:layout_constraintTop_toBottomOf="@+id/ontime" />
+
+            <TextView
+                android:id="@+id/ontime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable"
+                android:padding="8dp"
+                android:text="End Time"
+                app:layout_constraintBottom_toTopOf="@+id/length"
+                app:layout_constraintEnd_toStartOf="@+id/offtime"
+                app:layout_constraintStart_toEndOf="@+id/heatno"
+                app:layout_constraintTop_toTopOf="@+id/offtime" />
+
+            <TextView
+                android:id="@+id/heatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable"
+                android:padding="8dp"
+                android:text="Start Time"
+                app:layout_constraintBottom_toBottomOf="@+id/ontime"
+                app:layout_constraintEnd_toStartOf="@+id/ontime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ontime" />
+
+            <TextView
+                android:id="@+id/stime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable2"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="124"
+                app:layout_constraintEnd_toEndOf="@+id/heatno"
+                app:layout_constraintStart_toStartOf="@+id/heatno"
+                app:layout_constraintTop_toBottomOf="@+id/heatno" />
+
+            <TextView
+                android:id="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customtable"
+                android:padding="8dp"
+                android:text="Billet Count"
+                app:layout_constraintBottom_toTopOf="@+id/length"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/offtime"
+                app:layout_constraintTop_toTopOf="@+id/offtime" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/customtable2"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/totaltime"
+                app:layout_constraintStart_toStartOf="@+id/totaltime"
+                app:layout_constraintTop_toBottomOf="@+id/totaltime" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

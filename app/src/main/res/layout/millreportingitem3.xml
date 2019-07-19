@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Summary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/millreportsrv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layouttemp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layoutreason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/customtable2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutno">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customtable"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="BreakDown"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Time"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="86dp"
+                    android:text="Breakdown Reason"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/breakdownrv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layouttemp"
+                android:background="@drawable/customtable2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/blowerstarttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customtable2"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="45"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                    app:layout_constraintStart_toEndOf="@+id/textView32"
+                    app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/blowerendtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customtable2"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="20"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView34"
+                    app:layout_constraintStart_toEndOf="@+id/textView34"
+                    app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/customtable"
+                    android:padding="8dp"
+                    android:text="Blower End Time"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView32"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/millstarttime"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/customtable2"
+                    android:padding="8dp"
+                    android:text="24.60"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/customtable2"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="30/12/2999"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/customtable"
+                    android:padding="8dp"
+                    android:text="Blower Start Time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customtable"
+                    android:padding="8dp"
+                    android:text="Mill Start Time"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView34"
+                    app:layout_constraintEnd_toStartOf="@+id/millstarttime"
+                    app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customtable"
+                    android:padding="8dp"
+                    android:text="Date"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                    app:layout_constraintEnd_toStartOf="@+id/date"
+                    app:layout_constraintStart_toStartOf="@+id/textView37"
+                    app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layoutno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutreason"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/millreportsrv">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/customtable2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/no4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="12"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/totaltime4"
+                        app:layout_constraintStart_toStartOf="@+id/totaltime4"
+                        app:layout_constraintTop_toBottomOf="@+id/totaltime4" />
+
+                    <TextView
+                        android:id="@+id/totaltime4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 4"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no3"
+                        app:layout_constraintEnd_toStartOf="@+id/totaltime"
+                        app:layout_constraintStart_toEndOf="@+id/offtime"
+                        app:layout_constraintTop_toTopOf="@+id/offtime" />
+
+                    <TextView
+                        android:id="@+id/offtime"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 3"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ontime"
+                        app:layout_constraintEnd_toStartOf="@+id/totaltime4"
+                        app:layout_constraintStart_toEndOf="@+id/ontime"
+                        app:layout_constraintTop_toTopOf="@+id/ontime" />
+
+                    <TextView
+                        android:id="@+id/no3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="124"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/offtime"
+                        app:layout_constraintStart_toStartOf="@+id/offtime"
+                        app:layout_constraintTop_toBottomOf="@+id/offtime" />
+
+                    <TextView
+                        android:id="@+id/no2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="124"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/ontime"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/ontime"
+                        app:layout_constraintTop_toBottomOf="@+id/ontime" />
+
+                    <TextView
+                        android:id="@+id/ontime"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no1"
+                        app:layout_constraintEnd_toStartOf="@+id/offtime"
+                        app:layout_constraintStart_toEndOf="@+id/heatno"
+                        app:layout_constraintTop_toTopOf="@+id/heatno" />
+
+                    <TextView
+                        android:id="@+id/heatno"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 1"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/ontime"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/no1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="124"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/heatno"
+                        app:layout_constraintStart_toStartOf="@+id/heatno"
+                        app:layout_constraintTop_toBottomOf="@+id/heatno" />
+
+                    <TextView
+                        android:id="@+id/totaltime"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 5"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no3"
+                        app:layout_constraintEnd_toStartOf="@+id/totaltime6"
+                        app:layout_constraintStart_toEndOf="@+id/totaltime4"
+                        app:layout_constraintTop_toTopOf="@+id/offtime"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/totaltime6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="No 6"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/totaltime"
+                        app:layout_constraintTop_toTopOf="@+id/offtime"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/no5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="12"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/totaltime"
+                        app:layout_constraintStart_toStartOf="@+id/totaltime"
+                        app:layout_constraintTop_toBottomOf="@+id/totaltime" />
+
+                    <TextView
+                        android:id="@+id/no6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/customtable2"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="12"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/totaltime6"
+                        app:layout_constraintStart_toStartOf="@+id/totaltime6"
+                        app:layout_constraintTop_toBottomOf="@+id/totaltime" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

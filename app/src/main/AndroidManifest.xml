@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.companyeparchi.eparchi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/security"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.CCMReportsadvanced"></activity>
+        <activity android:name=".Activities.FinalInduction" />
+        <activity android:name=".Activities.InductionDashboard2" />
+        <activity android:name=".Activities.CameraActivity" />
+        <activity android:name=".Activities.billetreportchild" />
+        <activity android:name=".Activities.millreportchild" />
+        <activity android:name=".Activities.MillReports" />
+        <activity android:name=".Activities.Dashboard2" />
+        <activity android:name=".Activities.CCMReports" />
+        <activity android:name=".Activities.EndCuttingReport" />
+        <activity
+            android:name=".Activities.samplenav"
+            android:label="@string/title_activity_samplenav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.BilletReport" />
+        <activity android:name=".Activities.QualityReport" />
+        <activity android:name=".Activities.InductionReport" />
+        <activity android:name=".Activities.LoginName" />
+        <activity android:name=".Activities.MillReporting2" />
+        <activity android:name=".Activities.MillReporting4" />
+        <activity android:name=".Activities.MillReporting1" />
+        <activity android:name=".Activities.EndCutting2" />
+        <activity android:name=".Activities.CNNFinal" />
+        <activity android:name=".Activities.cnnreportingform" />
+        <activity android:name=".Activities.CCNReporting" />
+        <activity android:name=".Activities.QualityInfo" />
+        <activity android:name=".Activities.BilletInfo" />
+        <activity android:name=".Activities.StartEndSequence" />
+        <activity android:name=".Activities.InductionForm" />
+        <activity android:name=".Activities.FurnaceInfo" />
+        <activity android:name=".Activities.LoginShift">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
